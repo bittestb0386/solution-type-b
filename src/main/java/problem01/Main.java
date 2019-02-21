@@ -7,10 +7,23 @@ public class Main {
 	}
 
 	public static void findMaxProduct(int[] arr) {
+
+		int max = 0;
+		int temp = 0;
 		
-		//
-		// 코드를 완성 하십시오.
-		//
-		
+		int[] result = {};
+
+		for (int i = 0; i < arr.length - 1; i++) {
+			for(int j = i+1; j <= arr.length -1; j++) {
+				
+				temp = arr[i] * arr[j];
+				if(max < temp) {
+					max = temp;
+				}
+				
+			}
+			
+		}
+
 	}
 }
